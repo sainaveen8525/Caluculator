@@ -18,11 +18,6 @@
     padding: 10px;
     border-radius: 10px;
 }
-.display{
-    display: flex;
-    justify-content: flex-end;
-    margin: 20px 0;
-}
 .calculator .buttons button{
     border: 0;
     outline: 0;
@@ -36,3 +31,21 @@
     cursor: pointer;
     margin: 10px;
 }
+.display{
+    display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+}
+.display input{
+    text-align: right;
+    flex: 1;
+    font-size: 32px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    background: transparent;
+    color: #fff;
+}
+
+
+

@@ -11,34 +11,33 @@
         <div class="calculator">
             <div class="buttons">
                 <div class="display">
-                    <input type="text" class="result" readonly>
+                    <input type="text" id="display" class="result" readonly>
                 </div>
-                <button class="clear">AC</button>
-                <button class="per">%</button>
-                <button class="erase">⌫</button>
-                <button class="div">/</button>
+                <button class="clear" onclick="clearDisplay()">AC</button>
+                <button class="per" onclick="document.getElementById('display').value += '%'">%</button>
+                <button class="erase" onclick="erase()">⌫</button>
+                <button class="div" onclick="document.getElementById('display').value += '/'">​​​/</button>
                 <br>
-                <button class="7">7</button>
-                <button class="8">8</button>
-                <button class="9">9</button>
-                <button class="mul">*</button>
+                <button class="7" onclick="document.getElementById('display').value += '7'">7</button>
+                <button class="8" onclick="document.getElementById('display').value += '8'">8</button>
+                <button class="9" onclick="document.getElementById('display').value += '9'">9</button>
+                <button class="mul" onclick="document.getElementById('display').value += '*'">*</button>
                 <br>
-                <button class="4">4</button>
-                <button class="5">5</button>
-                <button class="6">6</button>
-                <button class="-">-</button>
+                <button class="4" onclick="document.getElementById('display').value += '4'">4</button>
+                <button class="5" onclick="document.getElementById('display').value += '5'">5</button>
+                <button class="6" onclick="document.getElementById('display').value += '6'">6</button>
+                <button class="-" onclick="document.getElementById('display').value += '-'">-</button>
                 <br>
-                <button class="1">1</button>
-                <button class="2">2</button>
-                <button class="3">3</button>
-                <button class="plus">+</button>
+                <button class="1" onclick="document.getElementById('display').value += '1'">1</button>
+                <button class="2" onclick="document.getElementById('display').value += '2'">2</button>
+                <button class="3" onclick="document.getElementById('display').value += '3'">3</button>
+                <button class="plus" onclick="document.getElementById('display').value += '+'">+</button>
                 <br>
-                <button class="00">00</button>
-                <button class="0">0</button>
-                <button class=".">.</button>
-                <button class="equal">=</button>
+                <button class="00" onclick="document.getElementById('display').value += '00'">00</button>
+                <button class="0" onclick="document.getElementById('display').value += '0'">0</button>
+                <button class="." onclick="document.getElementById('display').value += '.'">.</button>
+                <button class="equal" onclick="calculate()">=</button>
             </div>
         </div>
     </div>
 </body>
-</html>
