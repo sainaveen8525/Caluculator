@@ -11,11 +11,11 @@
         <div class="calculator">
             <div class="buttons">
                 <div class="display">
-                    <input type="text" id="display" class="result" readonly>
+                    <input type="text" id="display" class="result" >
                 </div>
-                <button class="clear" onclick="clearDisplay()">AC</button>
+                <button class="clear" onclick="display.value = ''">AC</button>
                 <button class="per" onclick="document.getElementById('display').value += '%'">%</button>
-                <button class="erase" onclick="erase()">⌫</button>
+                <button class="erase" onclick="display.value = display.value.slice(0,-1)">⌫</button>
                 <button class="div" onclick="document.getElementById('display').value += '/'">​​​/</button>
                 <br>
                 <button class="7" onclick="document.getElementById('display').value += '7'">7</button>
@@ -40,4 +40,5 @@
             </div>
         </div>
     </div>
+    <script src="function.js"></script>
 </body>
